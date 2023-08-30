@@ -17,7 +17,7 @@ spec:
         image: 572730696074.dkr.ecr.us-west-2.amazonaws.com/onco.frontend:latest
         resources:
           limits:
-            memory: "500Mi"
+            memory: "1Gi"
             cpu: "500m"
         ports:
         - containerPort: 3000

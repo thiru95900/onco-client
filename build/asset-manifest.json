@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee2bf846.css",
+    "main.js": "/static/js/main.f6ffd86f.js",
+    "static/media/keegan-houser--Q_t4SCN8c4-unsplash.jpg": "/static/media/keegan-houser--Q_t4SCN8c4-unsplash.35b78ef3b665f6deb71b.jpg",
+    "static/media/davies-designs-studio-f5_lfi2S-d4-unsplash.jpg": "/static/media/davies-designs-studio-f5_lfi2S-d4-unsplash.6023453ac3c09a8d931b.jpg",
+    "static/media/fermin-rodriguez-penelas-b8kEUZqMNoQ-unsplash.jpg": "/static/media/fermin-rodriguez-penelas-b8kEUZqMNoQ-unsplash.c207924fd7f90009b3c0.jpg",
+    "static/media/Group 51546.png": "/static/media/Group 51546.32779a2c4667e5ec32a9.png",
+    "static/media/national-cancer-institute-0YBIMOqQzt0-unsplash.png": "/static/media/national-cancer-institute-0YBIMOqQzt0-unsplash.73b288b1998e3c59cca9.png",
+    "static/media/ONCO 1.png": "/static/media/ONCO 1.6c4ed8e4d6f9fc632603.png",
+    "static/media/Group 51459.png": "/static/media/Group 51459.c70ff6b4821df139c9bd.png",
+    "static/media/Proxima Nova Font.otf": "/static/media/Proxima Nova Font.7bc9ce404c297c24f210.otf",
+    "static/media/bg-circles.png": "/static/media/bg-circles.9994c84f86c418670245.png",
+    "static/media/Group 51547.png": "/static/media/Group 51547.cc84403a41fc87bcc045.png",
+    "static/media/confirmation-circle.png": "/static/media/confirmation-circle.5c2202b2d25fde4f4c1a.png",
+    "static/media/Ellipse 30.png": "/static/media/Ellipse 30.dd4c33c28bc4742a0de8.png",
+    "static/media/Rectangle 17414.png": "/static/media/Rectangle 17414.c0327ccf5060b072b300.png",
+    "static/media/Group 51499.png": "/static/media/Group 51499.0bcaaea46bfbb4e005f1.png",
+    "static/media/Icon ionic-ios-mail.svg": "/static/media/Icon ionic-ios-mail.25427b436986e4382f175e19d92a45d3.svg",
+    "static/media/Group 51462.svg": "/static/media/Group 51462.7e869ee95816d9f69ae0e6ae0c621490.svg",
+    "static/media/account_circle_black_24dp.svg": "/static/media/account_circle_black_24dp.af6475749fda7168c9de4b88f5f3ad29.svg",
+    "index.html": "/index.html",
+    "static/media/Group 51463.svg": "/static/media/Group 51463.1018f34935ccd66e3598843ec4e6a154.svg",
+    "static/media/Icon awesome-phone-alt.svg": "/static/media/Icon awesome-phone-alt.35b3031b72ab89da63c8ff740f8bd123.svg",
+    "static/media/Icon material-location-on.svg": "/static/media/Icon material-location-on.061974cac64d5a22d87c750751357740.svg",
+    "static/media/Icon material-mode-edit.svg": "/static/media/Icon material-mode-edit.f826759bc0d932e8a455d1c208019fb4.svg",
+    "main.ee2bf846.css.map": "/static/css/main.ee2bf846.css.map",
+    "main.f6ffd86f.js.map": "/static/js/main.f6ffd86f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2bf846.css",
+    "static/js/main.f6ffd86f.js"
+  ]
+}

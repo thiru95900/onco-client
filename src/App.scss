@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600;700;800&display=swap');
+
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./styles/fonts/Proxima\ Nova\ Font.otf');
+}
+
+
+body{
+  background-color: #ffffff;
+}
+
+body,
+html {
+  margin: 0;
+  @media(max-width: 1600px) {
+    font-size: 14px;
+  }
+
+  @media(min-width: 1601px) {
+    font-size: 16px;
+  }
+}
+
+// scroll css
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.carousal-active{
+  color: #414141 !important;
+}
+
+.css-1abc02a, .css-hn784z {
+  .MuiButtonBase-root{
+    display: none;
+  }
+}
+
+// font classes
+.Proxima-nova{
+  font-family: 'Proxima Nova' !important;
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.toaster{
+  font-family: Georgia;
+}
+
+// MUI stepper
+.MuiStepConnector-root{
+  // display: none;
+  top:35px !important;
+  left: calc(-50% + 20px) !important;
+  right: calc(50% + 35px) !important;
+  margin-left: 15px !important;
+}
+
+.MuiStepConnector-root::after{
+  // display: none
+  // content: '>';
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #E9EAFF
+};
+
+
+// image slider
+.scroll{
+  padding-left: 64px;
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.MuiAccordion-root {
+  margin-bottom: 16px;
+}
+
+// OTP CSS 
+.otpContainer {
+  margin: 0% auto;
+}
+
+.otpInput {
+  width: 56px !important;
+  height: 56px;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(99, 99, 99);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*Add breakpoints for otp input*/
+/*  Add breakpoint for iPhone */
+@media only screen and (max-width: 375px) {
+  .otpContainer.otpInput {
+    width: 1.5rem !important;
+    height: 1.5rem;
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+//absolute css
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-center-end {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-center-start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-x-center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-x-end{
+  position: absolute;
+  right: 5%;
+  transform: translateY(-20%);
+}
+
+// error z-index
+.css-o7pwoy-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-error .MuiOutlinedInput-notchedOutlin{
+  z-index: -1 !important;
+}
+
+// MUI textField
+.MuiInputBase-input{
+  &.MuiOutlinedInput-input {
+    height: 56px !important;
+    padding: 0px 12px !important;
+  }
+}
+
+// MUI select 
+.MuiSelect-select{
+  &.MuiInputBase-input{
+    &.MuiOutlinedInput-input.MuiSelect-select{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// banner
+.outer-line{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 35vw;
+  height: 2px;
+  background-color: #6A6A6A4F;
+
+  .progress{
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    top: 50%;
+    background-color: #FF5016;
+    transform: translate(0px, -50%);
+  }
+}
+
+// Hear from us component
+.hear-from-us{
+  .MuiOutlinedInput-notchedOutline {
+    border-color: #A8A8A869;
+  }
+  .MuiInputBase-input {
+    &.MuiOutlinedInput-input{
+      color: #252525;
+      background-color: #797A8B;
+      border-radius: 4px;
+      &::placeholder {
+        color: 'blue'
+      }
+    }
+  }
+}
+
+.test-accordian{
+  .MuiPaper-root{
+    &.MuiAccordion-root{
+      box-shadow: none;
+    }
+  }
+}
+
+.test-accordian-faq {
+  .MuiPaper-root{
+    &.MuiAccordion-root{
+      box-shadow: none;
+      border-bottom: 1px solid #EDEDED;
+      padding-bottom :24px;
+      margin: 0;
+    }
+    .MuiAccordionDetails-root{
+      padding: 10px 10px;
+    }
+    .MuiAccordionSummary-content {
+      margin: 0px;
+    }
+    .MuiAccordionSummary-root{
+      padding: 0px;
+    }
+  }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+// news letter
+.news-letter {
+  .MuiButtonBase-root.MuiButton-root {
+    height: 45px;
+    width: 180px;
+  }
+}
+
+// get the test stepper
+.MuiStepper-root::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: 0px !important;  /* Firefox */
+}
+
+// User journey
+.user-journey {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+
+    li {
+      display: inherit;
+      max-width: 80vw;
+      flex-direction: column;
+      align-items: center;
+
+      .progress {
+        position: relative;
+      }
+
+      .progress::after {
+        content: '';
+        position: absolute;
+        width: 12vw;
+        height: 1px;
+        background-color: #E9EAFF;
+        left: 100%;
+      }
+
+      #icon-5::after {
+        width: 0px;
+        height: 0px;
+      } 
+
+      .content {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// footer
+.footer-li{
+  margin: 14px 0;
+}
+
+//contact
+.contact-us{
+  .contact-us-content{
+    position: relative;
+    z-index: 1;
+  }
+    
+  #text-area{
+    height: auto !important;
+    padding: 0px !important;
+  }
+}
+
+.avatar {
+  img{
+    object-fit: none;
+  }
+}
+
+//test info
+.health-provider .MuiButtonBase-root.MuiButton-root{
+  height: 36px;
+  font-size: 12px;
+}
+
+
+// user-journey progress bar media query css for 0 to 290
+@media (min-width: 00px) and (max-width: 290px) {
+  .progress::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 220% !important;
+    background-color: #E9EAFF;
+    left: 50%;
+    top: 100%;
+    bottom: 0;
+    transform: translate(-50%);
+  }
+}
+
+// user-journey progress bar media query css for 520 t0 600
+@media (min-width: 520px) and (max-width: 600px) {
+  
+  .progress::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 140% !important;
+    background-color: #E9EAFF;
+    left: 50%;
+    top: 100%;
+    bottom: 0;
+    transform: translate(-50%);
+  }
+  
+}
+
+//custum height for homepage image mac device
+@media (min-height:780px) and (min-width:1200px){
+  .home_page_banner {
+    min-height: 948px;
+  }
+  .home_page_banner_img{
+     height: 1vh;
+  }
+  .homepage_banner_info {
+    font-size: 23px !important; /* Custom font size for mac screens */
+  }
+   .homepage_banner_info_1 {
+    padding-top: 10px;
+    font-size: 20px !important; /* Custom font size for mac screens */
+  }
+  .testinformation_accordian_info{
+   font-size: 20px !important;
+  }
+}
+
+
+// xl screen 
+@media ( min-width: 1536px) {
+
+  .stepper-test-info {
+    .ul-primary li::marker {
+      content: "\25CF";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #F8A48A;
+      position: absolute;
+      padding-right: 2px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+    }
+  
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 16px;
+      margin: 40px 0px 40px 0px;
+    }
+  
+    .MuiPaper-root{
+      &.MuiAccordion-root {
+        box-shadow: none;
+        border: 1px solid #78787844;
+        min-height: 60px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+  
+  
+        .MuiButtonBase-root {
+          &.MuiAccordionSummary-root{
+            width: 100%;
+            padding: 0;
+            justify-content: space-between !important;
+            min-height: 60px;
+          }
+        }
+      }
+  
+      .MuiCollapse-wrapperInner {
+        padding: 0px 0px 0px 64px;
+      }
+    }
+
+    .MuiButtonBase-root.MuiCheckbox-root{
+      padding: 16px;
+    }
+
+    .MuiAccordionDetails-root{
+      padding: 0px 0px 24px 0px;
+    }
+
+    .css-o4b71y-MuiAccordionSummary-content {
+      margin: 0;
+    }
+  
+    .css-o4b71y-MuiAccordionSummary-content.Mui-expanded{
+      margin: 0;
+    }
+  
+    .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+      min-height: auto;
+    }
+  
+    .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+      padding: 8px;
+    }
+  
+  }
+  .MuiInputBase-input{
+    &.MuiOutlinedInput-input {
+      height: 56px !important;
+      padding: 0px 12px !important;
+    }
+  }
+  .MuiButtonBase-root{
+     &.MuiButton-root{
+      height: 56px !important;
+      padding: 0px 12px !important;
+     }
+    }
+}
+
+// lg screen
+@media (min-width: 1200px)  and ( max-width: 1535px) {
+  .stepper-test-info {
+    .ul-primary li::marker {
+      content: "\25CF";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #F8A48A;
+      position: absolute;
+      padding-right: 2px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+    }
+  
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 16px;
+      margin: 40px 0px 40px 0px;
+    }}
+
+  .otpContainer{
+    .otpInput{
+      width: 45px !important;
+      height: 45px;
+    }
+  }
+
+  .stepper-test-info {
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 0.5vw;
+      margin: 20px 0px 20px 0px;
+    }
+
+    .MuiPaper-root{
+      &.MuiAccordion-root {
+        box-shadow: none;
+        border: 1px solid #78787844;
+        min-height: 60px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+  
+  
+        .MuiButtonBase-root {
+          &.MuiAccordionSummary-root{
+            width: 100%;
+            padding: 0;
+            justify-content: space-between !important;
+            min-height: 60px;
+
+            .MuiAccordionSummary-content.Mui-expanded {
+              margin: 0px;
+            }
+          }
+        }
+      }
+  
+      .MuiCollapse-wrapperInner {
+        padding: 10px 0px 10px 30px;
+      }
+    }
+  }
+
+  .MuiInputBase-input{
+    &.MuiOutlinedInput-input {
+      height: 40px !important;
+      padding: 0px 12px !important;
+    }
+  }
+  .MuiButtonBase-root{
+     &.MuiButton-root{
+      height: 40px !important;
+      padding: 0px 12px !important;
+     }
+    }
+    .provider-list .MuiButtonBase-root{
+      &.MuiButton-root{
+       height: 36px !important;
+       padding: 0px 12px !important;
+      }
+     }
+}
+
+// md screen
+@media (min-width: 900px) and (max-width: 1200px) {
+  .stepper-test-info {
+    .ul-primary li::marker {
+      content: "\25CF";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #F8A48A;
+      position: absolute;
+      padding-right: 2px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+    }
+  
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 16px;
+      margin: 30px 0px 30px 0px;
+    }}
+  .css-47wtuv {
+    padding-top: 0vw !important;
+    padding-bottom: 0vw !important;
+}
+  .otpContainer{
+    .otpInput{
+      width: 45px !important;
+      height: 45px;
+    }
+  }
+
+  .user-journey {
+    .MuiStepper-root {
+      /* Change to vertical layout */
+      flex-direction: column !important;
+    }
+    
+    .MuiStepConnector-line{
+      display: block;
+      border-color: #bdbdbd;
+      border-left-style: solid;
+      border-left-width: 117px;
+      min-height: 2px;
+    }
+
+    .css-1pe7n21-MuiStepConnector-root{
+      margin-top: 45px;
+      margin-left: 0px !important;
+    }
+
+    .css-14sza3e-MuiStepLabel-root{
+      flex-direction: row;
+    }
+  }
+
+}
+
+// sm
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .carousal-info, .test-info{
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .about-us {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .absolute-center-start{
+        top: 50%;
+        left: 50%;
+    }
+
+    .absolute-center-end{
+        top: 50%;
+        left: 50%;
+    }
+  }
+
+  .test-accordian-faq {
+    .MuiPaper-root{
+      &.MuiAccordion-root{
+        box-shadow: none;
+        border-bottom: 1px solid #EDEDED;
+        padding-bottom :16px;
+        padding-top: 16px;
+        margin: 0;
+      }
+      .MuiAccordionDetails-root{
+        padding: 10px 10px;
+      }
+      .MuiAccordionSummary-content {
+        margin: 0px;
+      }
+      .MuiAccordionSummary-root{
+        padding: 0px;
+      }
+    }
+  }
+
+  .news-letter {
+    .MuiButtonBase-root.MuiButton-root {
+      height: 36px !important;
+      width: 180px !important;
+    }
+  }
+
+
+  .MuiInputBase-input {
+    &.MuiOutlinedInput-input{
+      height: 48px !important;
+      padding: 0px 16px !important;
+    }
+  }
+
+  .MuiButtonBase-root.MuiButton-root{
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .stepper-test-info {
+    .ul-primary li::marker {
+      content: "\25CF";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #F8A48A;
+      position: absolute;
+      padding-right: 2px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+    }
+  
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 0.5vw;
+      margin: 16px 0px 16px 0px;
+    }
+  }
+
+    .user-journey {
+    .MuiStepper-root {
+      /* Change to vertical layout */
+      flex-direction: column !important;
+    }
+    
+    .MuiStepConnector-line{
+      display: block;
+      border-color: #bdbdbd;
+      border-left-style: solid;
+      border-left-width: 117px;
+      min-height: 2px;
+    }
+
+    .css-1pe7n21-MuiStepConnector-root{
+      margin-top: 45px;
+      margin-left: 0px !important;
+    }
+
+    .css-14sza3e-MuiStepLabel-root{
+      flex-direction: row;
+    }
+  }
+
+  .home_page_banner_img{
+    height:2vh!important;
+  }
+  .home_page_banner_img_1{
+    height:calc(80vh - 30vh)!important;
+  }
+  .absolute-x-center{
+    top:25 !important;
+  }
+
+}
+
+// xs screen
+@media (min-width: 0px) and (max-width: 600px) {
+
+  .stepper-test-info {
+    .ul-primary li::marker {
+      content: "\25CF";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #F8A48A;
+      position: absolute;
+      padding-right: 2px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+    }
+  
+    .ul-primary {
+      padding-inline-start: 4px;
+      margin-block-start: 0px;
+    }
+  
+    .ul-primary li {
+      padding-left: 16px;
+      margin: 16px 0px 16px 0px;
+    }}
+
+  .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background: #101131 !important;
+    color: #E9EAFF !important;
+  }
+
+  .MuiInputBase-input{
+    &.MuiOutlinedInput-input {
+      height: 36px !important;
+      padding: 0px 12px !important;
+    }
+  }
+
+  .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select{
+    min-height: 10px !important;
+  }
+
+  .news-letter{
+    .MuiInputBase-input{
+      &.MuiOutlinedInput-input {
+        height: 8px !important;
+        padding: 10px 12px !important;
+        font-size: 10px;
+      }
+      
+    }
+
+    .MuiButtonBase-root.MuiButton-root{
+      height: 24px;
+      width: 66px;
+      font-size: 10px;
+    }
+
+  }
+
+  
+  .carousal-info, .about-us{
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .test-info {
+    #rect-img {
+      width: 100vw;
+    }
+
+    #top-img {
+      width: 80vw;
+    }
+
+    .MuiAccordionSummary-content.Mui-expanded{
+      margin: 10px 0;
+    }
+
+    .MuiAccordionDetails-root{
+      padding: 0px 16px;
+    }
+  }
+
+  .user-journey {
+    ul {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      gap: 40px;
+
+      li {
+        flex-direction: row;
+        // padding: 0px 20px;
+        justify-content: center;
+        height: 100%;
+
+        .progress::after {
+          content: '';
+          position: absolute;
+          width: 0.5px;
+          height: 250%;
+          background-color: #52526f;
+          left: 50%;
+          top: 100%;
+          bottom: 0;
+          transform: translate(-50%);
+        }
+
+        #icon-5::after {
+          width: 0px;
+          height: 0px;
+        } 
+
+        .content {
+          padding: 8px 12px;
+          flex-grow: 1;
+          p {
+            text-align: initial;
+          }
+        }
+      }
+    }
+  }
+  
+  .news-letter {
+    .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input{
+      height: 14px;
+      padding: 4px 7px;
+    }
+
+    .css-bwt5ou-MuiButtonBase-root-MuiButton-root{
+      padding: 5px;
+      height: 20px;
+      font-size: 0.6rem;
+    }
+  }
+
+  .about-us {
+    .absolute-center-start {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .absolute-center-end {
+      position: absolute;
+      top: 50%;
+      left:55%;
+      transform: translate(-50%, -50%);
+    }
+
+    .absolute-center {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .footer-li {
+    margin: 8px 0px;
+    color: #52526F;
+  }
+
+  .MuiButtonBase-root.MuiButton-root{
+    height: 36px;
+  }
+
+  .home_page_banner_img{
+    height:2vh!important;
+  }
+  .home_page_banner_img_1{
+    height:calc(80vh - 50vh)!important;
+  }
+  .absolute-x-center{
+    top:25 !important;
+  }
+
+}

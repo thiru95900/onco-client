@@ -1,15 +1,30 @@
-FROM node:18-alpine
+# Use an official Node.js runtime as the base image
+FROM node:18 as build
 
-WORKDIR /clinet
+# Set the working directory inside the container
+WORKDIR /app
 
-COPY package.json .
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
 
-RUN npm install -g
+# Install project dependencies
+RUN npm install
 
+# Copy the entire project to the container
 COPY . .
-RUN npm i
-#RUN npm run build
-EXPOSE 3000
-# required for docker desktop port mapping
 
-CMD ["npm", "start"]
+# Build the React app
+RUN npm run build
+
+# Use a smaller image for the production build
+FROM nginx:alpine
+
+# Copy the build files from the previous stage to the NGINX web server directory
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Expose port 80 for the NGINX server
+EXPOSE 80
+
+# Start the NGINX server
+CMD ["nginx", "-g", "daemon off;"]
+
